@@ -1,0 +1,121 @@
+<?php
+		include 'home.php';
+
+?>
+
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		font-size: 'poppins', sans-seriff;
+		box-sizing: border-box;
+	}
+	.container{
+		width: 100%;
+		height: 100vh;
+		padding: 0 8%;
+
+	}
+	.container h1{
+		text-align: center;
+		padding-top: 10%;
+		margin-bottom: 60px;
+		font-weight: 6000;
+		position: relative;
+	}
+	.container h1::after{
+		content: '';
+		background: #303ef7;
+		width: 100px;
+		height: 5px;
+		position: absolute;
+		bottom: -5px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.row{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-gap: 30px;
+	}
+	.service{
+		text-align: center;
+		padding:25px 10px;
+		border-radius: 5px;
+		font-size: 14px;
+		cursor: pointer;
+		background: transparent;
+		transition: transform 0.5s, background 0.5s;
+	}
+	.service i{
+		font-size: 40px;
+		margin-bottom: 10px;
+		color: #303ef7;
+	}
+	.service h2{
+		font-weight: 600;
+		margin-bottom: 8px;
+	}
+	.service:hover{
+		background:#303ef7 ;
+		color: #fff;
+		transform: scale(1.05);
+	}
+	.service:hover i{
+		color: #fff;
+	}
+
+</style>
+
+
+<body>
+	<div class="container">
+		<h1>Dashbord</h1>
+		<div class="row">
+			<div class="service">
+			<i class="fas fa-procedures"></i>
+			<a href="available service.php"><h2>Patients List</h2></a>
+			<p><!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor inci. --></p>
+		</div>
+		<div class="service">
+			<i class="fas fa-pills"></i>
+			<a href="Medicine list.php">
+			<h2>Medicine Sell</h2></a>
+			<p><!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor inci. --></p>
+		</div>
+		<div class="service">
+			<i class="fas fa-user-md"></i>
+			<h2>Employee</h2>
+			<p><!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor inci. --></p>
+		</div>
+		<div class="service">
+			<i class="fas fa-heartbeat"></i>
+			<h2>Area of Service</h2>
+			<p><!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor inci -->.</p>
+		</div>
+		<div class="service">
+			<i class="fas fa-book-medical"></i>
+						<h2>Diet Planning</h2>
+			<p><!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor inci. --></p>
+		</div>
+		<div class="service">
+			<i class="fas
+			fa-laptop-code"></i>
+			<h2>ECG</h2>
+			<p><!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor inci. --></p>
+		</div>
+		
+
+		</div>
+
+		
+	</div>
+</body>
+
+<?php include 'footer.php';?>
